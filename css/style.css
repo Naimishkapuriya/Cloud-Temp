@@ -196,7 +196,6 @@ header nav ul li a.active
     background-color: transparent;
 }
 
-
 /* ===========================img_line============================ */
 .img_line{
     padding: 50px 0px 0px 0px;
@@ -492,42 +491,7 @@ footer .footer_ul .footer_li i{
     color: var(--color-white);
 }
 
-/* ====================media================= */
-
-@media only screen and (max-width:992px){
-    .question{
-        height: 350px;
-    }
-}
-
-@media only screen and (max-width:600px){
-    .question{
-        background-color: var(--main-bg-color);
-        width: 100%;
-        height: 500px;
-    }
-}
-@media only screen and (max-width:400px){
-    .banner_text .text-h1 span{
-        font-size: 50px;
-        line-height:65px;
-    }
-    .blog_textmain .meta{
-        width: 130px;
-    }
-}
-@media only screen and (max-width:376px){
-    .banner_text .text-h1 span{
-        font-size: 31px;
-        line-height:40px;
-    }
-    .blog_textmain .meta{
-        width: 111px;
-    }
-}
-
 /* ===================================main_about============================= */
-
 
 .main_aboutimg{
     background-image: url(../images/bg_1.jpg.webp);
@@ -552,4 +516,125 @@ footer .footer_ul .footer_li i{
 }
 .main_about_p span, .main_about_h1{
     color: var(--color-white);
+}
+.main_about_h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/* ================================main_Leadership============================ */
+.team_box{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.team_box:hover{
+    box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.3) ;
+}
+.team_img img{
+    border-radius: 10px 10px 0px 0px;
+}
+.team_text{
+    padding: 20px;
+}
+.team_span{
+    color:var(--text-pink) ;
+}
+.team_p{
+    line-height: 1.5;
+    color: var(--text-light);
+}
+.team_icon_box div{
+    background-color: var(--bg-white);
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color:#000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.team_box:hover .team_icon_box div{
+    color:var(--text-derk);
+}
+/* ======================contact========================= */
+.contact p{
+    color: var(--text-light);
+    line-height: 1.5;
+}
+.contact a{
+    color: var(--text-lightgreen);
+}
+.contact_h4{
+    font-size: 24px;
+    font-weight: 400;
+}
+.form_input{
+    height: 52px;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    display: block;
+    padding: 6px 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+textarea.form_input{
+    height: inherit !important;
+}
+.send_btn{
+    background-color: var(--main-bg-color);
+    color: var(--color-white);
+    border: 1px solid var(--main-bg-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.send_btn:hover{
+    background-color: transparent;
+    color: var(--main-bg-color);
+}
+
+/* ====================media================= */
+
+@media only screen and (max-width:992px){
+    .question{
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .question{
+        background-color: var(--main-bg-color);
+        width: 100%;
+        height: 500px;
+    }
+}
+@media only screen and (max-width:400px){
+    .banner_text .text-h1 span{
+        font-size: 50px;
+        line-height:65px;
+    }
+    .blog_textmain .meta{
+        width: 130px;
+    }
+    .main_about_h1{
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
+@media only screen and (max-width:376px){
+    .banner_text .text-h1 span{
+        font-size: 31px;
+        line-height:40px;
+    }
+    .blog_textmain .meta{
+        width: 111px;
+    }
+    .main_about_h1{
+        font-size: 35px;
+        font-weight: 700;
+    }
 }
